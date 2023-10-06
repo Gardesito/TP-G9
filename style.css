@@ -91,6 +91,7 @@ nav .links {
 
 .menu-desplegable.open {
     height: 600px;
+    display: block;
 }
 
 .menu-desplegable a {
@@ -120,10 +121,7 @@ nav .links {
         display: block;
     }
 
-    .menu-desplegable {
-        display: block;
-
-    }
+   
 }
 
 /* ---------------------------------------------------------------- */
