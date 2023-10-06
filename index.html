@@ -3,8 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>TP-G9</title>
   </head>
-  <body></body>
+  <body>
+    <header class="barra-header">
+      <div class="barra">
+        <div>
+          <img src="/img/logo/logo.png" width="150px" alt="" />
+        </div>
+        <nav class="menu" for="btn-menu">
+          <a class="links" href="#home">Home</a>
+          <a class="links" href=" #about">About</a>
+          <a class="links" href="">Blog</a>
+          <a class="links" href="#contact">Contact</a>
+        </nav>
+
+        <div class="menu-hamburguesa">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="menu-desplegable">
+        <ul>
+          <li><a class="links-menu" href="#home">Home</a></li>
+          <li><a class="links-menu" href=" #about">About</a></li>
+          <li><a class="links-menu" href="">Blog</a></li>
+          <li><a class="links-menu" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="titulos" id="home">
+      <div class="titulo-main">
+        <h1 class="titulo1">Amazing <br />Holiday</h1>
+
+        <div class="container-parrafo">
+          <h2 class="titulo-parrafo">Enrique Iglesias</h2>
+          <p class="parrafo-main">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius a,
+            nesciunt dolorum architecto error possimus deserunt alias similique
+            optio exercitationem voluptatem unde eligendi eveniet ea mollitia.
+            Illum nobis fugit perferendis.
+          </p>
+        </div>
+      </div>
+      <div class="container-img">
+        <img src="/img/img-main-min.jpg" />
+      </div>
+    </main>
+
+    <script src="/index.js"></script>
+  </body>
 </html>
