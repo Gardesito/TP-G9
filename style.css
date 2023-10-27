@@ -9,12 +9,14 @@
   --color-titulo: #262626;
   --color-terciario: #828282;
   --fuente-parrafo: sans-serif;
+  --fuente-titulos: 'Times New Roman' ;
   --color-icono: white;
   --color-pseudoclase-iconos: rgb(129, 177, 222);
   --color-fondo-flechaizq: #f6f6f6;
   --color-flechaIzquierda: #d8d8d8;
   --color-texto-footer: #929292;
   --color-imput: #343434;
+ 
 }
 
 /* ELIAS SOLIS  */
@@ -516,16 +518,18 @@ nav .links {
 
 .contenedor-section4 {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .seccion4 {
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 68px;
   margin: 25px;
+  
 }
 
 .contenedor-A {
@@ -536,22 +540,31 @@ nav .links {
 .contenedor-A h3 {
   font-size: 41px;
   color: var(--color-titulo);
-  margin: 10px 0;
+  font-family: var(--fuente-titulos);
+  
 }
 
-.contenedor-A p {
-  font-size: 20px;
+.contenedor-A .classh3, .contenedor-B .classh3{
+   margin-top:8px;
+
+}
+
+.contenedor-A p, .contenedor-B p{
+  font-size: 18px;
   font-weight: 300;
   color: var(--color-parrafo);
+  margin: 10px 0;
+  font-family: var(--fuente-parrafo);
 }
 
 .contenedor-A .p1,
 .contenedor-B .p1 {
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .contenedor-A a i {
-  margin: 159px 0;
+  margin: 192px 0;
   width: 135px;
   height: 52px;
   text-align: center;
@@ -581,7 +594,7 @@ nav .links {
 }
 
 .contenedor-B {
-  flex-basis: 45%;
+  flex-basis: 46%;
   display: flex;
   flex-direction: column;
 }
@@ -594,22 +607,17 @@ nav .links {
 .contenedor-B .imgb {
   width: 188px;
   height: 190px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
-.contenedor-B .texto-parrafo h3 {
+.contenedor-B  h3 {
   font-size: 37px;
   color: var(--color-titulo);
-}
-
-.contenedor-B p {
-  font-size: 20px;
-  color: var(--color-parrafo);
-  margin: 10px 0;
+  font-family: var(--fuente-titulos);
 }
 
 .contenido2b {
-  margin-top: 30px;
+  margin-top: 65px;
 }
 
 /* QUERIES SECCION 4  */
@@ -617,34 +625,50 @@ nav .links {
 @media all and (max-width: 1200px) {
   .seccion4 {
     flex-direction: column;
+    margin-left: 45px;
   }
+  
+  
   .contenedor-B {
     margin-bottom: 130px;
+   
   }
+  
 }
 
 @media all and (max-width: 700px) {
   .contenedor-A a i {
+    width:95px;
     font-size: 30px;
   }
-
+  .contenedor-A h3{
+    font-size: 30px;
+  }
+  .contenedor-B h3{
+    font-size: 27px;
+  }
+  
   .contenedor-B .imgb {
-    width: 140px;
-    height: 154px;
+    width: 180px;
+    height: 184px;
   }
 }
 
 @media all and (max-width: 480px) {
-  .contenedor-A a i {
-    width: 90px;
-    height: 43px;
-    font-size: 20px;
+  
+  .seccion4{
+    align-items: center;
   }
 
   .contenedor-B img {
     margin-top: 25px;
+    
   }
 
+.contenedor-B .imgb{
+  width: 95%;
+  height: 100%;
+}
   .contenido1b,
   .contenido2b {
     flex-direction: column-reverse;
@@ -663,6 +687,7 @@ nav .links {
   padding: 90px 0;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 70px;
 }
 
 .img-footer img {
@@ -675,10 +700,10 @@ nav .links {
 }
 
 .words-footer {
-  font-size: 18px;
+  font-size: 17px;
   display: flex;
   justify-content: space-between;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: var(--fuente-parrafo);
   flex-basis: 30%;
 
   margin-right: 160px;
@@ -690,7 +715,7 @@ nav .links {
 }
 
 .words-footer .list {
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
 .words-footer li a {
@@ -702,12 +727,14 @@ nav .links {
 }
 
 .suscribirse-footer {
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: var(--fuente-parrafo);
   flex-basis: 25%;
+  margin-right: 45px;
+  
 }
 
 .suscribirse-footer p {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 15px;
   color: var(--color-texto-footer);
 }
@@ -716,22 +743,24 @@ form input[type="email"],
 form input[type="submit"] {
   background-color: var(--color-imput);
   border: none;
+  
 }
 
 form input[type="email"] {
   width: 215px;
   height: 44px;
   padding-left: 18px;
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 8px;
   margin-bottom: 10px;
+  font-family: var(--fuente-parrafo);
 }
 
 form .send {
   width: 85px;
   height: 44px;
   font-size: 14px;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: var(--fuente-parrafo) ; 
   padding-bottom: 1px;
   color: var(--color-icono);
   background-color: none;
@@ -753,7 +782,7 @@ form .send {
 
 /* QUERIES FOOTER */
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1323px) {
   .contenedor-footer {
     flex-direction: column;
     align-items: center;
