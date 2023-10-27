@@ -221,8 +221,6 @@ nav .links {
 .section1-img-section1 img {
   width: 600px;
 }
-
-/* ------------------------------------ */
 .contenedor-parrafo1 {
   display: flex;
   flex-direction: column;
@@ -237,7 +235,6 @@ nav .links {
   color: #a2a2a2;
   line-height: 30px;
   text-wrap: balance;
-  text-align: center;
 }
 
 .icono-section1 {
@@ -251,6 +248,9 @@ nav .links {
   font-family: sans-serif;
   text-wrap: balance;
   width: 850px;
+}
+.titulo-section1 {
+  font-size: 72px;
 }
 
 @media (max-width: 1200px) {
@@ -524,8 +524,7 @@ nav .links {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 68px;
-  margin:25px;
- 
+  margin: 25px;
 }
 
 .contenedor-A {
@@ -543,11 +542,11 @@ nav .links {
   font-size: 20px;
   font-weight: 300;
   color: var(--color-parrafo);
-
 }
 
-.contenedor-A .p1 , .contenedor-B .p1{
-  margin-top: 25px ;
+.contenedor-A .p1,
+.contenedor-B .p1 {
+  margin-top: 25px;
 }
 
 .contenedor-A a i {
@@ -584,8 +583,6 @@ nav .links {
   flex-basis: 45%;
   display: flex;
   flex-direction: column;
-  
-  
 }
 
 .contenido1b,
@@ -603,7 +600,6 @@ nav .links {
   font-size: 37px;
   color: var(--color-titulo);
 }
-
 
 .contenedor-B p {
   font-size: 20px;
@@ -624,12 +620,10 @@ nav .links {
   .contenedor-B {
     margin-bottom: 130px;
   }
- 
 }
 
 @media all and (max-width: 700px) {
-  
-  .contenedor-A a i{
+  .contenedor-A a i {
     font-size: 30px;
   }
 
@@ -640,7 +634,6 @@ nav .links {
 }
 
 @media all and (max-width: 480px) {
-  
   .contenedor-A a i {
     width: 90px;
     height: 43px;
@@ -651,7 +644,8 @@ nav .links {
     margin-top: 25px;
   }
 
-  .contenido1b,.contenido2b {
+  .contenido1b,
+  .contenido2b {
     flex-direction: column-reverse;
   }
   .contenido2b {
@@ -685,7 +679,7 @@ nav .links {
   justify-content: space-between;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   flex-basis: 30%;
-  
+
   margin-right: 160px;
 }
 
@@ -709,7 +703,6 @@ nav .links {
 .suscribirse-footer {
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
   flex-basis: 25%;
-  
 }
 
 .suscribirse-footer p {
@@ -729,7 +722,7 @@ form input[type="email"] {
   height: 44px;
   padding-left: 18px;
   font-size: 14px;
-  margin-right:8px;
+  margin-right: 8px;
   margin-bottom: 10px;
 }
 
@@ -760,7 +753,6 @@ form .send {
 /* QUERIES FOOTER */
 
 @media all and (max-width: 1200px) {
-   
   .contenedor-footer {
     flex-direction: column;
     align-items: center;
@@ -796,10 +788,7 @@ form .send {
   }
 }
 
-
 @media all and (max-width: 480px) {
-  
-
   .img-footer {
     margin-left: 50px;
   }
@@ -817,6 +806,4 @@ form .send {
   .suscribirse-footer {
     padding-left: 48px;
   }
-
 }
-
