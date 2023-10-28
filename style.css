@@ -344,7 +344,7 @@ nav .links {
 
 /* ------------------------------------ FIN SECTION 1 ELIAS SOLIS */
 
-/* Sección dos  */
+/* Sección tres */
 .secciontres {
   display: flex;
   flex-wrap: wrap;
@@ -418,7 +418,7 @@ nav .links {
   font-family: "Open Sans", sans-serif;
 }
 
-.secciontres .read .boton {
+.secciondos .read .boton {
   text-decoration: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -439,7 +439,7 @@ nav .links {
 }
 /* Sección Tres */
 
-.seccioncuatro {
+.secciontres {
   margin-top: 100px;
   background-color: rgb(250, 250, 250);
   display: flex;
@@ -487,32 +487,53 @@ nav .links {
 
 .iconos {
   margin-top: 25px;
+  font-size: 30px;
+  margin-right: 14px;
 }
 
 .iconos .fa-facebook {
   color: #336699;
-  font-size: 30px;
-  margin-right: 14px;
 }
 
 .iconos .fa-twitter {
-  font-size: 30px;
-  color: lightblue;
-  margin-right: 14px;
+  color: lightblue; 
 }
 
 .iconos .fa-google-plus {
-  font-size: 30px;
   color: red;
 }
-/* Queries sección 2 y 3 */
+/* Queries sección 3 y 4 */
 @media (max-width: 600px) {
-  .secciontres {
+  .tercera{
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
   }
 }
+
+@media (max-width: 576px){
+  .primera{
+    margin-bottom: 350px;
+  }
+}
+
+@media (max-width: 496px){
+  .primera{
+    margin-bottom: 400px;
+  }
+}
+
+@media (max-width: 396px){
+  .primera{
+    margin-bottom: 500px;
+  }
+}
+
+@media (max-width: 346px){
+  .primera{
+    margin-bottom: 600px;
+  }
+}
+
 
 /*-------------SECTION 4---------------------- */
 
@@ -613,69 +634,17 @@ nav .links {
 .contenedor-B  h3 {
   font-size: 37px;
   color: var(--color-titulo);
-  font-family: var(--fuente-titulos);
+  margin: 10px 0;
+}
+
+.contenedor-B p {
+  font-size: 17px;
+  color: var(--color-parrafo);
+  margin: 10px 0;
 }
 
 .contenido2b {
-  margin-top: 65px;
-}
-
-/* QUERIES SECCION 4  */
-
-@media all and (max-width: 1200px) {
-  .seccion4 {
-    flex-direction: column;
-    margin-left: 45px;
-  }
-  
-  
-  .contenedor-B {
-    margin-bottom: 130px;
-   
-  }
-  
-}
-
-@media all and (max-width: 700px) {
-  .contenedor-A a i {
-    width:95px;
-    font-size: 30px;
-  }
-  .contenedor-A h3{
-    font-size: 30px;
-  }
-  .contenedor-B h3{
-    font-size: 27px;
-  }
-  
-  .contenedor-B .imgb {
-    width: 180px;
-    height: 184px;
-  }
-}
-
-@media all and (max-width: 480px) {
-  
-  .seccion4{
-    align-items: center;
-  }
-
-  .contenedor-B img {
-    margin-top: 25px;
-    
-  }
-
-.contenedor-B .imgb{
-  width: 95%;
-  height: 100%;
-}
-  .contenido1b,
-  .contenido2b {
-    flex-direction: column-reverse;
-  }
-  .contenido2b {
-    margin-top: 70px;
-  }
+  margin-top: 30px;
 }
 
 /* FOOTER */
@@ -803,22 +772,39 @@ form .send {
 
   .suscribirse-footer {
     margin-top: 15px;
-    font-size: 15px;
-  }
-
-  form input[type="email"] {
-    width: 150px;
+    margin-right: 40px;
   }
 
   form .send {
-    margin-top: 10px;
-    width: 65px;
-    font-size: 14px;
-    padding-top: 3px;
+    height: 30px;
+    font-size: 10px;
   }
 }
-
 @media all and (max-width: 480px) {
+  .contenedor-A a i {
+    width: 70px;
+    height: 43px;
+    font-size: 20px;
+  }
+
+  .contenedor-A h3,
+  .contenedor-B .texto-parrafo h3 {
+    margin: 1px 0;
+  }
+  .contenedor-B img {
+    margin-top: 25px;
+  }
+  .contenedor-B .texto-parrafo .p1 {
+    margin-top: 40px;
+  }
+  .contenido1b,
+  .contenido2b {
+    flex-direction: column-reverse;
+  }
+  .contenido2b {
+    margin-top: 70px;
+  }
+
   .img-footer {
     margin-left: 50px;
   }
@@ -834,6 +820,10 @@ form .send {
   }
 
   .suscribirse-footer {
-    padding-left: 48px;
+    padding-left: 57px;
+  }
+
+  .suscribirse-footer p {
+    margin-left: 1px;
   }
 }
