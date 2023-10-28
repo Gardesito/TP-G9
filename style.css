@@ -345,7 +345,7 @@ nav .links {
 /* ------------------------------------ FIN SECTION 1 ELIAS SOLIS */
 
 /* Sección tres */
-.secciontres {
+.secciondos {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -502,7 +502,65 @@ nav .links {
 .iconos .fa-google-plus {
   color: red;
 }
-/* Queries sección 3 y 4 */
+/* Queries sección 2 y 3 */
+
+@media (max-width: 1790px){
+  .secciondos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 200px;
+  }
+
+  .primera{
+    width: 80%;
+    align-items: center;
+  }
+
+  .subtitulo{
+    font-size: 50px;
+  }
+
+  .texto{
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .foto-uno{
+    align-items: center;
+    margin-bottom: 320px;
+  }
+
+  .foto-dos{
+    align-items: center;
+    margin: auto;
+  }
+
+  .segunda{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1300px){
+  .primera{
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 688px){
+  .primera{
+    margin-bottom: 200px;
+  }
+}
+
 @media (max-width: 600px) {
   .tercera{
     display: flex;
