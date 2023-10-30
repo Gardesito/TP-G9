@@ -344,7 +344,7 @@ nav .links {
 
 /* ------------------------------------ FIN SECTION 1 ELIAS SOLIS */
 
-/* Sección tres */
+/* ------SECCIÓN DOS----------Gonzalo Torres */
 .secciondos {
   display: flex;
   flex-wrap: wrap;
@@ -452,7 +452,7 @@ nav .links {
   padding-left: 30px;
   padding-bottom: 50px;
 }
-/* Sección Tres */
+/*------- SECCIÓN TRES--------GONZALO TORRES*/
 
 .secciontres {
   margin-top: 100px;
@@ -622,7 +622,7 @@ nav .links {
 }
 
 
-/*-------------SECTION 4---------------------- */
+/*-------------SECCIÓN 4---------------------- */ /*CAMILA A. TOLABA*/
 
 .contenedor-section4 {
   width: 100%;
@@ -672,7 +672,7 @@ nav .links {
 }
 
 .contenedor-A a i {
-  margin: 192px 0;
+  margin: 189px 0;
   width: 135px;
   height: 52px;
   text-align: center;
@@ -721,20 +721,74 @@ nav .links {
 .contenedor-B  h3 {
   font-size: 37px;
   color: var(--color-titulo);
-  margin: 10px 0;
-}
-
-.contenedor-B p {
-  font-size: 17px;
-  color: var(--color-parrafo);
-  margin: 10px 0;
+  font-family: var(--fuente-titulos);
 }
 
 .contenido2b {
-  margin-top: 30px;
+  margin-top: 65px;
 }
 
-/* FOOTER */
+/* QUERIES SECCION 4  */
+
+@media all and (max-width: 1200px) {
+  .seccion4 {
+    flex-direction: column;
+    margin-left: 45px;
+  }
+  
+  
+  .contenedor-B {
+    margin-bottom: 130px;
+   
+  }
+  
+}
+
+@media all and (max-width: 700px) {
+  .contenedor-A a i {
+    width:95px;
+    font-size: 30px;
+  }
+  .contenedor-A h3{
+    font-size: 30px;
+  }
+  .contenedor-B h3{
+    font-size: 27px;
+  }
+  
+  .contenedor-B .imgb {
+    width: 180px;
+    height: 184px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  
+  .seccion4{
+    align-items: center;
+  }
+
+  .contenedor-B img {
+    margin-top: 25px;
+    
+  }
+
+.contenedor-B .imgb{
+  width: 95%;
+  height: 100%;
+}
+  .contenido1b,
+  .contenido2b {
+    flex-direction: column-reverse;
+  }
+  .contenido2b {
+    margin-top: 70px;
+  }
+}
+
+/*------Fin sección 4 Camila A Tolaba-------- */
+
+/*------ FOOTER------- */ /*Camila A. Tolaba*/
 
 .contenedor-footer {
   background-color: var(--color-titulo);
@@ -859,39 +913,23 @@ form .send {
 
   .suscribirse-footer {
     margin-top: 15px;
-    margin-right: 40px;
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  form input[type="email"] {
+    width: 150px;
   }
 
   form .send {
-    height: 30px;
-    font-size: 10px;
+    margin-top: 10px;
+    width: 65px;
+    font-size: 14px;
+    padding-top: 3px;
   }
 }
+
 @media all and (max-width: 480px) {
-  .contenedor-A a i {
-    width: 70px;
-    height: 43px;
-    font-size: 20px;
-  }
-
-  .contenedor-A h3,
-  .contenedor-B .texto-parrafo h3 {
-    margin: 1px 0;
-  }
-  .contenedor-B img {
-    margin-top: 25px;
-  }
-  .contenedor-B .texto-parrafo .p1 {
-    margin-top: 40px;
-  }
-  .contenido1b,
-  .contenido2b {
-    flex-direction: column-reverse;
-  }
-  .contenido2b {
-    margin-top: 70px;
-  }
-
   .img-footer {
     margin-left: 50px;
   }
@@ -907,10 +945,9 @@ form .send {
   }
 
   .suscribirse-footer {
-    padding-left: 57px;
-  }
-
-  .suscribirse-footer p {
-    margin-left: 1px;
+    margin-left:45px
+   
   }
 }
+
+
