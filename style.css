@@ -561,6 +561,8 @@ nav .links {
     align-items: center;
     text-align: center;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
   }
 
   .linea{
@@ -595,6 +597,11 @@ nav .links {
   .primera{
     margin-bottom: 300px;
   }
+
+  .subtitulo{
+    text-align: center;
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 576px){
@@ -606,6 +613,12 @@ nav .links {
 @media (max-width: 496px){
   .primera{
     margin-bottom: 400px;
+  }
+}
+
+@media (max-width: 411px){
+  .primera{
+    margin-bottom: 450px;
   }
 }
 
