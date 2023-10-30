@@ -548,11 +548,13 @@ nav .links {
   .foto-uno{
     align-items: center;
     margin-bottom: 320px;
+    width: 120%;
   }
 
   .foto-dos{
     align-items: center;
     margin: auto;
+    width: 110%;
   }
 
   .segunda{
@@ -563,6 +565,7 @@ nav .links {
     font-size: 20px;
     margin: 0;
     padding: 0;
+    margin-top: 100px;
   }
 
   .linea{
@@ -576,17 +579,19 @@ nav .links {
   }
 }
 
+@media (max-width:1200px){
+  .subtitulo{
+    text-align: center;
+    font-size: 35px;
+    width: 60%;
+  }
+}
 @media (max-width: 717px){
   .primera{
-    margin-bottom: 200px;
+    margin-bottom: 150px;
   }
 }
 
-@media (max-width: 688px){
-  .primera{
-    margin-bottom: 200px;
-  }
-}
 
 @media (max-width: 600px) {
   .tercera{
@@ -595,45 +600,46 @@ nav .links {
   }
 
   .primera{
-    margin-bottom: 300px;
+    margin-bottom: 200px;
   }
 
-  .subtitulo{
-    text-align: center;
-    font-size: 40px;
-  }
 }
 
 @media (max-width: 576px){
   .primera{
-    margin-bottom: 350px;
+    margin-bottom: 250px;
   }
 }
 
-@media (max-width: 496px){
+@media (max-width: 498px){
   .primera{
-    margin-bottom: 400px;
+    margin-bottom: 300px;
   }
 }
 
 @media (max-width: 411px){
   .primera{
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 401px){
+  .primera{
+    margin-bottom: 350px;
+  }
+}
+
+@media (max-width: 383px){
+  .primera{
+    margin-bottom: 400px;
+  }
+}
+
+@media (max-width: 348px){
+  .primera{
     margin-bottom: 450px;
   }
 }
-
-@media (max-width: 396px){
-  .primera{
-    margin-bottom: 500px;
-  }
-}
-
-@media (max-width: 346px){
-  .primera{
-    margin-bottom: 600px;
-  }
-}
-
 
 /*-------------SECCIÓN 4---------------------- */ /*CAMILA A. TOLABA*/
 
